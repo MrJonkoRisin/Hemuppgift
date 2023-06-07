@@ -7,20 +7,24 @@ This project is a web API that takes a text input and returns the top 10 most fr
 
 Counts the frequency of words in a text.
 
-+ Request (text/plain)
+**Request** 
+- Method: POST
+- Content-Type: text/plain
 
-    The request body should contain the text for which word frequency needs to be calculated.
+The request body should contain the text for which word frequency needs to be calculated.
 
-+ Response 200 (application/json)
+**Response** 
+- Status 200 OK
+- Content-Type:application/json
 
-    Returns the top 10 most frequent words along with their frequencies.
+Returns the top 10 most frequent words along with their frequencies.
 
-    + Attributes (object)
+**Attributes**
 
-        - word1 (number) - The frequency of word1.
-        - word2 (number) - The frequency of word2.
-        - ...
-        - word10 (number) - The frequency of word10.
+   - word1 (number) - The frequency of word1.
+   - word2 (number) - The frequency of word2.
+   - ...
+   - word10 (number) - The frequency of word10.
 
 + Request Example
 
@@ -38,11 +42,11 @@ Counts the frequency of words in a text.
     }
     ```
 ## Error Handling 
-Invalid Requests: If an invalid request is made, such as a missing or malformed request body, the API will throw an error. This error is caught by the route handler using a try-catch block. The error is then passed to the error handling middleware, which sends a JSON response with a 500 status code and an appropriate error message.
+- Invalid Requests: If an invalid request is made, such as a missing or malformed request body, the API will throw an error. This error is caught by the route handler using a try-catch block. The error is then passed to the error handling middleware, which sends a JSON response with a 500 status code and an appropriate error message.
 
-Endpoint Not Found: If a request is made to an invalid endpoint that doesn't exist, the API responds with an "Endpoint not found" error. This error is caught by the endpoint not found middleware, which creates a new Error object with the message "Endpoint not found" and passes it to the next middleware.
+- Endpoint Not Found: If a request is made to an invalid endpoint that doesn't exist, the API responds with an "Endpoint not found" error. This error is caught by the endpoint not found middleware, which creates a new Error object with the message "Endpoint not found" and passes it to the next middleware.
 
-Server Errors: If a server error occurs during the execution of the API's logic, such as an unexpected exception or an error in the code, it is caught by the error handling middleware. The error is logged to the console, and a JSON response with a 500 status code and an error message is sent back to the client.
+- Server Errors: If a server error occurs during the execution of the API's logic, such as an unexpected exception or an error in the code, it is caught by the error handling middleware. The error is logged to the console, and a JSON response with a 500 status code and an error message is sent back to the client.
 ## Installation
 
 Follow these step-by-step instructions to set it up locally.

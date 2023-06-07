@@ -6,7 +6,7 @@ This project is a web API that takes a text input and returns the top 10 most fr
 
 Follow these step-by-step instructions to set it up locally.
 
-1. Clone the project from the GitHub repository: git clone 
+1. Clone the project from the GitHub repository: git clone https://github.com/MrJonkoRisin/Hemuppgift.git
 2. Install dependencies: `npm install`
 3. Configure environment variables by creating a .env file and specifying the port on which the server should run. 
 

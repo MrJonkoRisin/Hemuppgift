@@ -53,7 +53,7 @@ Follow these step-by-step instructions to set it up locally.
 
 1. Clone the project from the GitHub repository: git clone https://github.com/MrJonkoRisin/Hemuppgift.git
 2. Install dependencies: `npm install`
-3. Configure environment variables by creating a .env file and specifying the port on which the server should run. 
+3. Configure environment variables by creating a .env file and specifying the port on which the server should run. (if not, the server runs on port 5000)
 
 ## Usage
 

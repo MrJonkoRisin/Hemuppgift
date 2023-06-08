@@ -59,7 +59,7 @@ Follow these step-by-step instructions to set it up locally.
 
 To interact with the API I have used Postman and added instructions down below.
 
-1. Start the server: npm start
+1. Start the server in terminal: `npm start`
 2. Open Postman and create a new POST request by clicking the "New" button in the left sidebar.
 3. In the "Create a Request" dialog, select "POST" as the method.
 4. Enter the URL http://localhost:5000/count in the address bar, or use a different port if you specified one.
